@@ -104,3 +104,27 @@ Before proposing changes to skill design, workflow philosophy, or architecture, 
 - One problem per PR
 - Test on at least one harness and report results in the environment table
 - Describe the problem you solved, not just what you changed
+
+
+---
+
+# Reversa
+
+> Framework de Engenharia Reversa instalado neste projeto.
+
+## Como usar
+
+Digite `/reversa` para ativar o Reversa e iniciar ou retomar a análise do projeto.
+
+## Comportamento ao ativar
+
+Quando o usuário digitar `/reversa` ou a palavra `reversa` sozinha em uma mensagem:
+
+1. Ative o skill `reversa` disponível em `.claude/skills/reversa/SKILL.md`
+2. Se não encontrar em `.claude/skills/`, tente `.agents/skills/reversa/SKILL.md`
+3. Leia o SKILL.md na íntegra e siga exatamente as instruções do Reversa
+
+## Regra não-negociável
+
+Nunca apague, modifique ou sobrescreva arquivos pré-existentes do projeto legado.
+O Reversa escreve **apenas** em `.reversa/` e `_reversa_sdd/`.
